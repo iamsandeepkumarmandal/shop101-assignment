@@ -5,6 +5,7 @@ $header-contact-background: #f5f5f5;
 $white-color: #ffffff;
 $navigation-hover-color: #fab702;
 $banner-background-color: #a7a9fe;
+$footer-background-color: #252c3a;
 
 // font-family
 $base-font-size: 14;
@@ -16,3 +17,11 @@ $normal-font-weight: 400;
 $light-font-weight: 300;
 $medium-font-weight: 500;
 $bold-font-weight: 700;
+
+// define break points
+$large-device-min-width: 1200;
+$medium-device-max-width: ($large-device-min-width - 0.01);
+$medium-device-min-width: 992;
+$tablet-max-width: ($medium-device-min-width - 0.01);
+$tablet-min-width: 768;
+$mobile-max-width: ($tablet-min-width - 0.01);

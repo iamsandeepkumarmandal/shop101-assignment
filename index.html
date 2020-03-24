@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop 101</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
     <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body>
@@ -61,7 +62,7 @@
         <div class="container">
             <h4 class="heading-font text-uppercase section-title text-center">Our Services</h4>
             <p class="text-center section-description">Lorem ipsum dolor sit amet, sed dicunt oporteat cu, laboramus definiebas cum et. Duo id omnis persequeris neglegentur, facete commodo ea usu, possit lucilius sed ei. Esse efficiendi scripserit eos ex. Sea utamur iisque salutatus id.Mel autem animal.</p>
-            <div class="services-wrapper--types display-flex">
+            <div class="services-wrapper--types display-flex flex-direction-column-mobile">
                 <div class="flex-1">
                     <div class="service">
                         <div class="service--thumbnail yellow"></div>
@@ -95,7 +96,7 @@
             </div>
         </div>
     </section>
-    <section class="service-types-wrapper display-flex">
+    <section class="service-types-wrapper display-flex flex-direction-column-mobile">
         <div class="flex-1 display-flex">
             <div class="service-types-wrapper--yellow-overlay position-relative">
                 <img src="/images/play/play.png" class="responsive-image position-absolute play-btn" />
@@ -145,7 +146,7 @@
                 <li><a href="#0">Office</a></li>
             </ul>
         </div>
-        <div class="display-flex">
+        <div class="display-flex flex-direction-column-mobile">
             <div class="flex-1">
                 <div class="featured-work position-relative active">
                     <div class="featured-work--thumbail box-1"></div>
@@ -222,7 +223,7 @@
     </section>
     <section class="leadgen-wrapper">
         <div class="container">
-            <div class="leadgen-wrapper--leadgen display-flex flex-align-center">
+            <div class="leadgen-wrapper--leadgen display-flex flex-align-center flex-direction-column-mobile">
                 <div class="content heading-font">
                     <h4>Embedded in our culture of hard work, honesty, and getting the well done job</h4>
                     <h5>It can be used on larger scale projects as well as small scale projects without any problems. </h5>
@@ -233,22 +234,112 @@
             </div>
         </div>
     </section>
-    <footer class="footer-navigation-wrapper">
-        <div class="container display-flex">
-            <div class="footer-navigation-wrapper--logo">
-                <a href="#0" class="text-uppercase">&copy; Themexpert 2018</a>
+    <footer class="footer">
+        <section class="footer-quicklinks">
+            <div class="container display-flex flex-direction-column-mobile">
+                <div class="flex-1">
+                    <div class="recent-posts-wrapper">
+                        <h4 class="footer-title">Recent Posts</h4>
+                        <ul>
+                            <li><a href="#0">How you can impact your customers.</a></li>
+                            <li><a href="#0">Construction is all about quality.</a></li>
+                            <li><a href="#0">Is your website user friendly?</a></li>
+                            <li><a href="#0">HUGE offers weekly updates & more.</a></li>
+                            <li><a href="#0">Your customers should love your web.</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class="recent-news-wrapper">
+                        <h4 class="footer-title">Recent News</h4>
+                        <a class="news-wrapper display-flex flex-align-center" href="#0">
+                            <div class="news-wrapper--thumbnail pink">
+                            </div>
+                            <div class="news-wrapper--content">
+                                <h5>A Clean Website Gives More Experience To The Visitors</h5>
+                                <p>Dec 12 - 2018</p>
+                            </div>
+                        </a>
+                        <a class="news-wrapper display-flex flex-align-center" href="#0">
+                            <div class="news-wrapper--thumbnail blue">
+                            </div>
+                            <div class="news-wrapper--content">
+                                <h5>A Clean Website Gives More Experience To The Visitors</h5>
+                                <p>Dec 12 - 2018</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class="contact-info-wrapper">
+                        <h4 class="footer-title">Contact Info</h4>
+                        <div class="contact-details display-flex">
+                            <div class="contact-details--icons">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-details--content">
+                                hello@contact.com
+                            </div>
+                        </div>
+                        <div class="contact-details display-flex">
+                            <div class="contact-details--icons">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-details--content">
+                                P:&nbsp; 3333 222 1111<br/>
+                                F:&nbsp; 3333 222 1111
+                            </div>
+                        </div>
+                        <div class="contact-details display-flex">
+                            <div class="contact-details--icons">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-details--content">
+                                99 Barnard St - Suite 111<br/>
+                                United States - GA 22222 
+                            </div>
+                        </div>
+                        <div class="social-share-wrapper">
+                            <ul>
+                                <li><a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#0"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                <li><a href="#0"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <div class="mailing-list-wrapper">
+                        <h4 class="footer-title">Mailing List</h4>
+                        <form class="mailing-list-wrapper--subscription-form">
+                            <p>Enter your email address  for our mailing list to keep yourself updated.</p>
+                            <div class="form-group display-flex">
+                                <input type="text" placeholder="Email address"/>
+                                <button type="submit" class="submit-subscribe-form text-uppercase">done</button>
+                            </div>
+                            <p class="privacy-statement">We Respect Your Privacy</p>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="footer-navigation-wrapper--navigation-links">           
-                <ul>
-                    <li><a href="#0">Home</a></li>
-                    <li><a href="#0">About</a></li>
-                    <li><a href="#0">Services</a></li>
-                    <li><a href="#0">Portfolio</a></li>
-                    <li><a href="#0">Blog</a></li>
-                    <li><a href="#0">Contact</a></li>
-                </ul>
+        </section>
+        <section class="footer-navigation-wrapper">
+            <div class="container display-flex flex-direction-column-mobile">
+                <div class="footer-navigation-wrapper--logo">
+                    <a href="#0" class="text-uppercase">&copy; Themexpert 2018</a>
+                </div>
+                <div class="footer-navigation-wrapper--navigation-links">           
+                    <ul>
+                        <li><a href="#0">Home</a></li>
+                        <li><a href="#0">About</a></li>
+                        <li><a href="#0">Services</a></li>
+                        <li><a href="#0">Portfolio</a></li>
+                        <li><a href="#0">Blog</a></li>
+                        <li><a href="#0">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </section>
     </footer>
 </body>
 </html>
